@@ -31,10 +31,10 @@ server.use(cors())
 
 server.use("/product", product);
 
-// server.use("/users", UserControllers.getUser)
-// // routes.get("/user/:id", UserControllers.getUser)
-// server.use("/user", UserControllers.createUser)
-// server.use("/user", UserControllers.login)
+server.use("/users", UserControllers.getUser)
+// routes.get("/user/:id", UserControllers.getUser)
+server.use("/user", UserControllers.createUser)
+server.use("/user", UserControllers.login)
 // routes.put("/user/:id", UserControllers.updateUser)
 
 
