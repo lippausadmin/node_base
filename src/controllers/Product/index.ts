@@ -1,12 +1,14 @@
-const express = require("express");
-const router = express.Router();
+// const express = require("express");
+// const router = express.Router();
+import { Router } from "express";
+import { Request, Response } from "express";
 
 /**
  * GET product list.
  *
  * @return product list | empty.
  */
-router.get("/", async (req, res) => {
+export async function product(req: Request, res: Response){
   try {
     res.json({
       status: 200,
@@ -16,6 +18,5 @@ router.get("/", async (req, res) => {
     console.error(error);
     return res.status(500).send("Server error");
   }
-});
+}
 
-module.exports = router;
