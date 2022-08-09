@@ -1,5 +1,6 @@
 import { Sequelize } from "sequelize"
 import dotenv from "dotenv"
+import * as pg from "pg"
 
 dotenv.config()
 
@@ -15,6 +16,7 @@ export const sequelize = new Sequelize(
 	process.env.PG_PASSWORD as string,
 	{
 		dialect: "postgres",
+		dialectModule: pg,
 		port: parseInt(process.env.PG_PORT as string),
 		host: process.env.PG_ID as string,
 		timezone: "-03:00",
