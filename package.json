@@ -7,17 +7,9 @@
     "start": "node index.js",
     "dev": "nodemon index.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hatuanem199801/express-vercel.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hatuanem199801/express-vercel/issues"
-  },
-  "homepage": "https://github.com/hatuanem199801/express-vercel#readme",
   "dependencies": {
     "@prisma/client": "^4.1.1",
     "@types/bcrypt": "^5.0.0",
