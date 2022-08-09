@@ -21,7 +21,7 @@ server.use(cors())
 
 // server.listen(3005);
 
-server.use(routes);
+server.use("/product", product);
 
 
 server.listen(3005);
