@@ -29,12 +29,12 @@ server.use(cors())
 
 // USERS
 
-server.get("/product", product);
+server.use("/product", product);
 
-server.get("/users", UserControllers.getUser)
+server.use("/users", UserControllers.getUser)
 // routes.get("/user/:id", UserControllers.getUser)
-server.post("/user", UserControllers.createUser)
-server.patch("/user", UserControllers.login)
+server.use("/user", UserControllers.createUser)
+server.use("/user", UserControllers.login)
 // routes.put("/user/:id", UserControllers.updateUser)
 
 
